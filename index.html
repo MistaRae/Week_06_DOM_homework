@@ -12,28 +12,28 @@
     <aside >
         <form id = "new-item-form">
             <div id = "form-wrapper">
-                <label for="club-name">Club Name</label>
+                <label class = 'label' for="club-name">Club Name</label>
                 <input type="text" id="clubname">
             </div>
             <div>
-                <label for="nation">Nation</label>
+                <label class = 'label' for="nation">Nation</label>
                 <select id="nation">
                     <option value="" disabled selected></option>
                     <option value="Scotland">Scotland</option>
-                    <option value="Scotland">England</option>
-                    <option value="Scotland">Spain</option>
-                    <option value="Scotland">France</option>
-                    <option value="Scotland">Italy</option>
-                    <option value="Scotland">Germany</option>
+                    <option value="England">England</option>
+                    <option value="Spain">Spain</option>
+                    <option value="France">France</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Germany">Germany</option>
                 </select>
             </div>
-            <input type="submit" value="Save">
+            <input class = "button" type="submit" value="Save">
         </form>
     </aside>
     <main>
         <div id = "club-list">
             <h1>Your teams</h1>
-            <button id = "delete-button"> DELETE ALL </button>
+            <button class = "button" id = "delete-button"> DELETE ALL </button>
         </div>
         <ul id = "teams">
             <!-- team content goes here  -->
