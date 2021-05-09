@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded',() => {
     const newClubForm = document.querySelector('#new-item-form');
       // what are we listening for + what we do when the event fires 
     newClubForm.addEventListener('submit', handleNewFormSubmit); 
+
+    const deleteButton = document.querySelector('#delete-button');
+    deleteButton.addEventListener('click', handleDeleteButton);
 });
 
 const handleNewFormSubmit = function (event) {
@@ -32,5 +35,9 @@ const createNewClub = function (form) {
     newClub.appendChild(clubNation);
 
     return newClub;
+}
 
+const handleDeleteButton = function () {
+    const yourTeamsList = document.querySelector('#teams')
+    yourTeamsList.innerHTML = '';
 }
